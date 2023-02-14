@@ -1,4 +1,4 @@
-# [Django API Generator](https://github.com/app-generator/django-api-generator) `tests`
+# [Django Dynamic Services](https://github.com/app-generator/django-dynamic-services) 
 
 Open-source **Django** project used to test the [API Generator for Django](https://github.com/app-generator/django-api-generator) - provided by `AppSeed`.
 
@@ -8,10 +8,8 @@ Open-source **Django** project used to test the [API Generator for Django](https
 
 - ✅ `Up-to-date Dependencies`
 - ✅ Theme: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
-- ✅ **Authentication**: `Django.contrib.AUTH`, Registration
-- 🚀 `Deployment` 
-  - `CI/CD` flow via `Render`
-- [API Generator](https://github.com/app-generator/django-api-generator) - free PyPi library  
+- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - Supports nested models
+- 🚀 `Deployment`: Docker, `CI/CD` flow via `Render`
 
 <br />
 
@@ -20,8 +18,8 @@ Open-source **Django** project used to test the [API Generator for Django](https
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`)
 
 ```bash
-$ git clone https://github.com/app-generator/django-api-generator-app.git
-$ cd django-api-generator-app
+$ git clone https://github.com/app-generator/django-dynamic-services.git
+$ cd django-dynamic-services
 ```
 
 > 👉 **Step 2** - Start the APP in `Docker`
@@ -48,8 +46,8 @@ $  docker exec <CONTAINER_ID> python manage.py createsuperuser # create the supe
 > 👉 Download the code  
 
 ```bash
-$ git clone https://github.com/app-generator/django-api-generator-app.git
-$ cd django-api-generator-app
+$ git clone https://github.com/app-generator/django-dynamic-services.git
+$ cd django-dynamic-services
 ```
 
 <br />
@@ -97,8 +95,8 @@ $ python manage.py runserver
 
 At this point, the app runs at `http://127.0.0.1:8000/` and the generated API can be found at: 
 
-- http://localhost:8000/api/product/ - For products
-- http://localhost:8000/api/sales/ - For sales 
+- http://localhost:8000/api/product/ - For `products`
+- http://localhost:8000/api/sales/ - For `sales` 
 
 The default API nodes can be tested via this [POSTMAN](./media/test.postman_collection) Collection.  
 
@@ -166,4 +164,4 @@ The project is coded using a simple and intuitive structure presented below:
 <br /> 
 
 ---
-[Django AdminLTE](https://appseed.us/product/adminlte/django/) - Open-Source **Django** starter provided by **[AppSeed](https://appseed.us/)**
+[Django Dynamic Services](https://github.com/app-generator/django-dynamic-services) - Open-Source **Django** starter provided by **[AppSeed](https://appseed.us/)**
