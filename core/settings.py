@@ -173,7 +173,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ### ### ### ### ### ### 
 # API GENERATOR Specific
 API_GENERATOR = {
-    # pattern: 
     # API_SLUG -> Import_PATH 
     'product'  : "home.models.Product",
     'sales'    : "home.models.Sales",
