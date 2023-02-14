@@ -32,6 +32,15 @@ $ docker-compose up --build
 
 Visit `http://localhost:5085` in your browser. The app should be up & running.
 
+
+> 👉 **Step 3** - Create Superuser in `Docker`
+
+```bash
+# GET CONTAINER_ID
+$ docker container ls                                          # list containes & get the ID
+$  docker exec <CONTAINER_ID> python manage.py createsuperuser # create the superuser
+```
+
 <br />
 
 ## Manual Build 
@@ -67,7 +76,7 @@ $ python manage.py migrate
 > 👉 Generate API
 
 ```bash
-$ python manage.py generate-api
+$ python manage.py generate-api -f
 ```
 
 <br />
