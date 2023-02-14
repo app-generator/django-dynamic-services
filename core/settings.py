@@ -31,10 +31,10 @@ if not SECRET_KEY:
 DEBUG = 'RENDER' not in os.environ
 
 # Docker HOST
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Add here your deployment HOSTS
-CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000', 'http://localhost:5085', 'http://127.0.0.1:8000', 'http://127.0.0.1:5085']
 
 #Render Context
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -51,6 +51,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    'django_api_gen',            # Django API GENERATOR  # <-- NEW
+    'rest_framework',            # Include DRF           # <-- NEW 
+    'rest_framework.authtoken',  # Include DRF Auth      # <-- NEW  
 
     "home",
 ]
@@ -165,3 +169,20 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+### ### ### ### ### ### 
+# API GENERATOR Specific
+API_GENERATOR = {
+    # pattern: 
+    # API_SLUG -> Import_PATH 
+    'product'  : "home.models.Product",
+    'sales'    : "home.models.Sales",
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
+### ### ### ### ### ### 
