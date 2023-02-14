@@ -34,9 +34,10 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 > 👉 **Step 3** - Create Superuser in `Docker`
 
 ```bash
-# GET CONTAINER_ID
-$ docker container ls                                          # list containes & get the ID
-$  docker exec <CONTAINER_ID> python manage.py createsuperuser # create the superuser
+$ # List containes & get the ID
+$ docker container ls  
+$ # Create the superuser
+$ docker exec <CONTAINER_ID> python manage.py createsuperuser 
 ```
 
 <br />
