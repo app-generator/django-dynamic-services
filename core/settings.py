@@ -10,9 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
-import os, random, string
+import os, random, string, inspect
 from pathlib import Path
 from dotenv import load_dotenv
+import django_dyn_dt
 
 load_dotenv()  # take environment variables from .env.
 
@@ -56,6 +57,8 @@ INSTALLED_APPS = [
     'rest_framework',            # Include DRF           # <-- NEW 
     'rest_framework.authtoken',  # Include DRF Auth      # <-- NEW  
 
+    'django_dyn_dt',             # <-- NEW App
+
     "home",
 ]
 
@@ -72,12 +75,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "core.urls"
 
-HOME_TEMPLATES = os.path.join(BASE_DIR, 'home', 'templates')
+HOME_TEMPLATES   = os.path.join(BASE_DIR, 'home', 'templates')
+DATATB_TEMPLATES = os.path.join(BASE_DIR, "django_dyn_dt/templates")
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [HOME_TEMPLATES],
+        "DIRS": [HOME_TEMPLATES, DATATB_TEMPLATES],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -170,7 +174,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  
 # API GENERATOR Specific
 API_GENERATOR = {
     # API_SLUG -> Import_PATH 
@@ -184,4 +188,19 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
 }
-### ### ### ### ### ### 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### 
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###  
+# Dynamic DataTables Specific
+
+DYNAMIC_DATATB = {
+    # SLUG -> Import_PATH 
+    'product'  : "home.models.Product",
+    'product2'  : "home.models.Product2",
+}
+
+DYN_DB_PKG_ROOT = os.path.dirname( inspect.getfile( django_dyn_dt ) ) # <-- NEW App
+
+STATICFILES_DIRS = (
+    os.path.join(DYN_DB_PKG_ROOT, "templates/static"),
+)

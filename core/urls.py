@@ -20,7 +20,11 @@ from rest_framework.authtoken.views import obtain_auth_token
 urlpatterns = [
     path('', include('home.urls')),
     path("admin/", admin.site.urls),
-    path("api/",   include("api.urls")),        # <-- NEW
-    path('login/jwt/', view=obtain_auth_token), # <-- NEW
+
+    path("api/",   include("api.urls")),        # <-- NEW (Used by API GEN)
+    path('login/jwt/', view=obtain_auth_token), # <-- NEW (Used by API GEN)
+    
+    path('', include('django_dyn_dt.urls')),    # <-- NEW: (Used by Dynamic DataTables)
+
     path("", include('admin_adminlte.urls'))
 ]

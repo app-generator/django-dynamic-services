@@ -74,7 +74,9 @@ $ python manage.py migrate
 > 👉 Generate API
 
 ```bash
-$ python manage.py generate-api -f
+$ python manage.py generate-api     # requires confirmation
+// 
+$ python manage.py generate-api -f  # no input (API folder is overwritten)
 ```
 
 <br />
