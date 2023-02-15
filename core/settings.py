@@ -196,7 +196,6 @@ REST_FRAMEWORK = {
 DYNAMIC_DATATB = {
     # SLUG -> Import_PATH 
     'product'  : "home.models.Product",
-    'product2'  : "home.models.Product2",
 }
 
 DYN_DB_PKG_ROOT = os.path.dirname( inspect.getfile( django_dyn_dt ) ) # <-- NEW App
