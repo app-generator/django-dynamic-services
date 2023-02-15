@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.3] 2023-02-15
+### Changes
+
+- Update CI/CD flow
+  - Migrate latest DB changes 
+  - Generate the API
+
 ## [1.0.2] 2023-02-15
 ### Changes
 
