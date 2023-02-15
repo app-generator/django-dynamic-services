@@ -1,9 +1,8 @@
 # [Django Dynamic Services](https://github.com/app-generator/django-dynamic-services) 
 
-Open-source **Django** project used to show-case the `API Generator` and other **Dynamic Services** - actively supported by [AppSeed](https://appseed.us/).
+Open-source **Django** project that show-cases the **[API Generator](https://appseed.us/developer-tools/django-api-generator/)** and other **[Dynamic Services](https://appseed.us/developer-tools/django-dynamic-datatables/)** - actively supported by [AppSeed](https://appseed.us/).
 
 > 👉 [Django - Build Services without Coding](https://www.youtube.com/watch?v=EtMCK5AmdQI) - `video presentation` (learn how to use this starter)
-
 
 ### Features
 
