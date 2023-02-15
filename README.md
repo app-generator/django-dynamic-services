@@ -2,6 +2,8 @@
 
 Open-source **Django** project used to show-case the [API Generator for Django](https://github.com/app-generator/django-api-generator) and other **dynamic services**  provided by `AppSeed`.
 
+👉 [Django - Build Services without Coding](https://www.youtube.com/watch?v=EtMCK5AmdQI) - `video presentation` (learn how to use this starter)
+
 <br />
 
 > Features: 
