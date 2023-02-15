@@ -133,7 +133,7 @@ For API sample requests, open and edit the [POSTMAN](./media/test.postman_collec
 
 At this point, you should be able to use the API. For more information regarding the library used to generate the code, access: 
 
-> 👉 [https://github.com/app-generator/django-api-generator](https://github.com/app-generator/django-api-generator) - Open-Source Library
+> 👉 [API Generator for Django](https://github.com/app-generator/django-api-generator) - Open-Source Library
 
 <br />
 
