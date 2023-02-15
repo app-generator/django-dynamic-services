@@ -14,6 +14,10 @@ Open-source **Django** project that showcases the **[API Generator](https://apps
 
 <br />
 
+![Django Dynamic Services - free developer tools provided by AppSeed.](https://user-images.githubusercontent.com/51070104/219007148-34cefb52-92cc-4ef3-bbf9-f8ee6ae2389b.png)
+
+<br />
+
 ## Start the app in Docker
 
 > 👉 **Step 1** - Download the code from the GH repository (using `GIT`)
