@@ -14,4 +14,4 @@ django-api-generator==1.0.9
 
 # Dynamic Datatables 
 #git+https://github.com/app-generator/django-dynamic-datatb.git
-django-dynamic-datatb==1.0.6
+django-dynamic-datatb==1.0.7
