@@ -1,6 +1,6 @@
 # [Django Dynamic Services](https://github.com/app-generator/django-dynamic-services) 
 
-Open-source **Django** project used to test the [API Generator for Django](https://github.com/app-generator/django-api-generator) - provided by `AppSeed`.
+Open-source **Django** project used to show-case the [API Generator for Django](https://github.com/app-generator/django-api-generator) and other **dynammic services**  provided by `AppSeed`.
 
 <br />
 
