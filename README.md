@@ -8,7 +8,8 @@ Open-source **Django** project used to test the [API Generator for Django](https
 
 - ✅ `Up-to-date Dependencies`
 - ✅ Theme: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
-- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - Supports nested models
+- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - `Free Python Library` 
+- ✅ [Dynamic DataTables](https://github.com/app-generator/django-dynamic-datatb) - `Free Python Library`
 - 🚀 `Deployment`: Docker, `CI/CD` flow via `Render`
 
 <br />
