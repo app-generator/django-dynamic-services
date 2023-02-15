@@ -6,7 +6,7 @@ Open-source **Django** project used to show-case the [API Generator for Django](
 
 <br />
 
-> Features: 
+### Features
 
 - ✅ `Up-to-date Dependencies`
 - ✅ Theme: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
