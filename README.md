@@ -154,7 +154,7 @@ The project is coded using a simple and intuitive structure presented below:
    |    |-- tests.py                     # Tests  
    |    |-- templates/                   # Theme Customisation 
    |         |-- includes                # 
-   |              |-- custom-footer.py   # Custom Footer      
+   |              |-- footer.py          # Custom Footer      
    |     
    |-- requirements.txt                  # Project Dependencies
    |
