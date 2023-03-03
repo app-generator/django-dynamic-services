@@ -1,15 +1,20 @@
 # [Django Dynamic Services](https://github.com/app-generator/django-dynamic-services) 
 
-Open-source **Django** project used to test the [API Generator for Django](https://github.com/app-generator/django-api-generator) - provided by `AppSeed`.
+Open-source **Django** project that showcases the **[API Generator](https://appseed.us/developer-tools/django-api-generator/)** and other **[Dynamic Services](https://appseed.us/developer-tools/django-dynamic-datatables/)** - actively supported by [AppSeed](https://appseed.us/).
 
-<br />
+> 👉 [Django - Build Services without Coding](https://www.youtube.com/watch?v=EtMCK5AmdQI) - `video presentation` (learn how to use this starter)
 
-> Features: 
+### Features
 
 - ✅ `Up-to-date Dependencies`
 - ✅ Theme: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
-- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - Supports nested models
+- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - `Free Python Library` 
+- ✅ [Dynamic DataTables](https://github.com/app-generator/django-dynamic-datatb) - `Free Python Library`
 - 🚀 `Deployment`: Docker, `CI/CD` flow via `Render`
+
+<br />
+
+![Django Dynamic Services - free developer tools provided by AppSeed.](https://user-images.githubusercontent.com/51070104/219007148-34cefb52-92cc-4ef3-bbf9-f8ee6ae2389b.png)
 
 <br />
 
@@ -132,7 +137,7 @@ For API sample requests, open and edit the [POSTMAN](./media/test.postman_collec
 
 At this point, you should be able to use the API. For more information regarding the library used to generate the code, access: 
 
-> 👉 [https://github.com/app-generator/django-api-generator](https://github.com/app-generator/django-api-generator) - Open-Source Library
+> 👉 [API Generator for Django](https://github.com/app-generator/django-api-generator) - Open-Source Library
 
 <br />
 
@@ -154,7 +159,7 @@ The project is coded using a simple and intuitive structure presented below:
    |    |-- tests.py                     # Tests  
    |    |-- templates/                   # Theme Customisation 
    |         |-- includes                # 
-   |              |-- custom-footer.py   # Custom Footer      
+   |              |-- footer.py          # Custom Footer      
    |     
    |-- requirements.txt                  # Project Dependencies
    |

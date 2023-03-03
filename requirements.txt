@@ -10,8 +10,8 @@ django-admin-adminlte==1.0.5
 
 # API Generator
 #git+https://github.com/app-generator/django-api-generator.git
-django-api-generator==1.0.9
+django-api-generator==1.0.10
 
 # Dynamic Datatables 
 #git+https://github.com/app-generator/django-dynamic-datatb.git
-django-dynamic-datatb==1.0.6
+django-dynamic-datatb==1.0.8

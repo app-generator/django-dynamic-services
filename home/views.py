@@ -16,3 +16,9 @@ def test_datatb(request, **kwargs):
     return render(request, 'test-datatb.html', context={
         'data_table1': ddt.render(),
     })
+
+def api_generator(request):
+    return render(request, 'pages/api-generator.html')
+
+def dyn_datatb(request):
+    return render(request, 'pages/dyn-datatb.html')
