@@ -1,22 +1,19 @@
 from http import HTTPStatus
 from django.http import Http404
+from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import get_object_or_404
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
-
 from api.serializers import *
-
 
 from home.models import Product
 
 from home.models import Sales
 
 
-
 class ProductView(APIView):
-
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def post(self, request):
@@ -86,7 +83,6 @@ class ProductView(APIView):
 
 
 class SalesView(APIView):
-
     permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def post(self, request):
@@ -153,4 +149,3 @@ class SalesView(APIView):
             'message': 'Record Deleted.',
             'success': True
         }, status=HTTPStatus.OK)
-
