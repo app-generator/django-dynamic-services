@@ -104,25 +104,30 @@
               <div class="col-sm-12 col-md-12">
                 <p>
                   <ul>
-                    <li>Open Home/models.py file</li>
                     <li>Edit your models</li>
                     <li>Migrate database</li>
-                    <li>Update Configuration (for new models) - DYNAMIC_DATATB section</li>
-                    <li>Access the API in the browser</li>
+                    <li>Import "DataTB" object</li>
+                    <li>Link DataTB to a model: "DataTB(model_class_path="home.models.Product")"</li>
+                    <li>Render the widget: "ddt.render()"</li>
                   </ul>
-                  Without any changes, the API is generated for Products model: 
-                  <ul>
-                    <li>
-                      <a target="_blank" href="/datatb/product/">Products Data Tables</a>
-                    </li>
-                  </ul>
-                  <br />
-                  For <a target="_blank" href="https://appseed.us/support/">Support</a> and more resources, please access <a target="_blank" href="https://appseed.us">AppSeed</a>.
+                </p>
+                <p>
+                  Here is the result result for the Products Model.
                 </p>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12">         
+                {{ data_table1 }}
+              </div>
+            </div>
+
           </div>
           <!-- /.card-body -->
+          <div class="card-footer">
+            For <a target="_blank" href="https://appseed.us/support/">Support</a> and more resources, please access <a target="_blank" href="https://appseed.us">AppSeed</a>.
+          </div>          
         </div>
         <!-- /.card -->
 
