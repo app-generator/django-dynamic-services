@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.4] 2023-03-04
+### Changes
+
+- Bump [Dynamic DataTables](https://github.com/app-generator/django-dynamic-datatb) `1.0.12`
+
 ## [1.0.3] 2023-02-15
 ### Changes
 
