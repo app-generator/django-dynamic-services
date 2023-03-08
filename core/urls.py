@@ -26,9 +26,9 @@ urlpatterns = [
     path("api/",   include("api.urls")),        # <-- NEW (Used by API GEN)
     path('login/jwt/', view=obtain_auth_token), # <-- NEW (Used by API GEN)
     
-    path('datatb/<str:model_name>/<int:pk>/', csrf_exempt(DataTB.as_view())),    # <-- NEW: (Used by Dynamic DataTables)
-    path('datatb/<str:model_name>/', csrf_exempt(DataTB.as_view())),    # <-- NEW: (Used by Dynamic DataTables)
-    path('datatb/<str:model_name>/export/', csrf_exempt(export)),    # <-- NEW: (Used by Dynamic DataTables)
+    path('datatb/<str:model_name>/<int:pk>/', csrf_exempt(DataTB.as_view())),  # <-- NEW: (Used by Dynamic DataTables)
+    path('datatb/<str:model_name>/'         , csrf_exempt(DataTB.as_view())),  # <-- NEW: (Used by Dynamic DataTables)
+    path('datatb/<str:model_name>/export/'  , csrf_exempt(export)),            # <-- NEW: (Used by Dynamic DataTables)
 
     path("", include('admin_adminlte.urls')),
 ]
