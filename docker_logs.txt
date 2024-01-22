@@ -1,0 +1,80 @@
+Building appseed-app
+Sending build context to Docker daemon  250.9kB
+Step 1/12 : FROM python:3.9
+ ---> 3595702fda76
+Step 2/12 : ENV PYTHONDONTWRITEBYTECODE 1
+ ---> Using cache
+ ---> 10f26e55ac51
+Step 3/12 : ENV PYTHONUNBUFFERED 1
+ ---> Using cache
+ ---> 7b141ed240d7
+Step 4/12 : COPY requirements.txt .
+ ---> Using cache
+ ---> 6feca9c76d72
+Step 5/12 : RUN pip install --upgrade pip
+ ---> Using cache
+ ---> c1c9602191e1
+Step 6/12 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 6f27c4b4d3c1
+Step 7/12 : COPY . .
+ ---> 24ec9cd1836c
+Step 8/12 : RUN python manage.py makemigrations
+ ---> Running in def4a3cee912
+Migrations for 'home':
+  home/migrations/0001_initial.py
+    - Create model Product
+    - Create model Sales
+Removing intermediate container def4a3cee912
+ ---> 288af1aa8f4c
+Step 9/12 : RUN python manage.py migrate
+ ---> Running in 24d3f86c5ae4
+Operations to perform:
+  Apply all migrations: admin, auth, authtoken, contenttypes, home, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying authtoken.0001_initial... OK
+  Applying authtoken.0002_auto_20160226_1747... OK
+  Applying authtoken.0003_tokenproxy... OK
+  Applying home.0001_initial... OK
+  Applying sessions.0001_initial... OK
+Removing intermediate container 24d3f86c5ae4
+ ---> 350d943d5ba8
+Step 10/12 : RUN echo "from django.contrib.auth.models import User; User.objects.create_superuser('ash', 'admin@example.com', 'Password1!')" | python manage.py shell
+ ---> Running in 16b0501f68d9
+Removing intermediate container 16b0501f68d9
+ ---> 9822642b89cc
+Step 11/12 : RUN python manage.py generate-api -f
+ ---> Running in 3bac4123cf2a
+ > Configuration looks good.
+   !!! The API folder will be overwritten !!! 
+ > Generate API (forcing mode).
+API successfully generated
+Removing intermediate container 3bac4123cf2a
+ ---> 15f67e340b57
+Step 12/12 : CMD ["gunicorn", "--config", "gunicorn-cfg.py", "core.wsgi"]
+ ---> Running in 7493a603c3da
+Removing intermediate container 7493a603c3da
+ ---> 28ec10a43cc4
+Successfully built 28ec10a43cc4
+Successfully tagged djangoprj4_appseed-app:latest
+Creating appseed_app ... 
+Creating appseed_app ... done
+Creating nginx       ... 
+Creating nginx       ... done

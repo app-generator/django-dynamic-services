@@ -15,6 +15,9 @@ COPY . .
 RUN python manage.py makemigrations 
 RUN python manage.py migrate
 
+# Create superuser
+RUN echo "from django.contrib.auth.models import User; User.objects.create_superuser('ash', 'admin@example.com', 'Password1!')" | python manage.py shell
+
 # Generate the API
 RUN python manage.py generate-api -f
 
