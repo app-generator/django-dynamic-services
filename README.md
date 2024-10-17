@@ -1,20 +1,18 @@
-# [Django Dynamic Services](https://appseed.us/developer-tools/dynamic-django/) 
+# [Django Dynamic Services](https://app-generator.dev/docs/developer-tools/dynamic-django/index.html) 
 
-Open-source **Django** project that showcases the **[API Generator](https://appseed.us/developer-tools/django-api-generator/)** and other **[Dynamic Services](https://appseed.us/developer-tools/django-dynamic-datatables/)** - actively supported by [AppSeed](https://appseed.us/).
+Open-source **Django** project that showcases the **API Generator** and other **Dynamic Services** - actively supported by [App-Generator](https://app-generator.dev/).
 
-> 👉 [Django - Build Services without Coding](https://www.youtube.com/watch?v=EtMCK5AmdQI) - `video presentation` (learn how to use this starter)
+- 👉 [Django - Build Services without Coding](https://www.youtube.com/watch?v=EtMCK5AmdQI) - `video presentation` (learn how to use this starter)
 
-### Features
+---
 
-- ✅ `Up-to-date Dependencies`
-- ✅ Theme: [Django AdminLTE](https://github.com/app-generator/django-admin-adminlte) `v3.2.0`
-- ✅ [API Generator](https://github.com/app-generator/django-api-generator) - `Free Python Library` 
-- ✅ [Dynamic DataTables](https://github.com/app-generator/django-dynamic-datatb) - `Free Python Library`
-- 🚀 `Deployment`: Docker, `CI/CD` flow via `Render`
+> For a **complete set of features** and long-term support, check out **[Dynamic Django](https://app-generator.dev/docs/developer-tools/dynamic-django/index.html)**, a powerful starter that incorporates:
 
-<br />
-
-![Django Dynamic Services - free developer tools provided by AppSeed.](https://user-images.githubusercontent.com/51070104/219007148-34cefb52-92cc-4ef3-bbf9-f8ee6ae2389b.png)
+- ✅ [Dynamic DataTables](https://app-generator.dev/docs/developer-tools/dynamic-django/datatables.html): using a single line of configuration, the data saved in any table is automatically managed
+- ✅ [Dynamic API](https://app-generator.dev/docs/developer-tools/dynamic-django/api.html): any model can become a secure API Endpoint using DRF
+- ✅ [Dynamic Charts](https://app-generator.dev/docs/developer-tools/dynamic-django/charts.html): extract relevant charts without coding all major types are supported
+- ✅ [CSV Loader](https://app-generator.dev/docs/developer-tools/dynamic-django/csv-loader.html): translate CSV files into Django Models and (optional) load the information
+- ✅ Powerful [CLI Tools](https://app-generator.dev/docs/developer-tools/dynamic-django/cli.html) for the GIT interface, configuration editing, updating the configuration and database (create models, migrate DB)
 
 <br />
 
@@ -172,4 +170,4 @@ The project is coded using a simple and intuitive structure presented below:
 <br /> 
 
 ---
-[Django Dynamic Services](https://appseed.us/developer-tools/dynamic-django/) - Open-Source **Django** starter provided by **[AppSeed](https://appseed.us/)**
+[Django Dynamic Services](https://app-generator.dev/docs/developer-tools/dynamic-django/index.html) - Open-Source **Django** starter provided by **[App-Generator](https://app-generator.dev/)**
